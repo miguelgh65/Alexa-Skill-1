@@ -1,0 +1,82 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "curiosidades sobre juegos",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetNewFactIntent",
+                    "slots": [],
+                    "samples": [
+                        "alguna cosa",
+                        "dime algo curioso",
+                        "una curiosidad sobre un videojuego",
+                        "un dato"
+                    ]
+                },
+                {
+                    "name": "GetFactByJuegos",
+                    "slots": [
+                        {
+                            "name": "videojuego",
+                            "type": "TipoJuego"
+                        }
+                    ],
+                    "samples": [
+                        "dime una curiosidad sobre un {videojuego}",
+                        "alguna cosa sobre un {videojuego} ",
+                        "dime algo curioso sobre un {videojuego}",
+                        "un dato sobre un {videojuego}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "TipoJuego",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Minecraft"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Resident Evil"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Metroid"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mario"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zelda"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
